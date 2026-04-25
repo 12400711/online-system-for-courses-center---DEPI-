@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students</title>
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="Bootstrap/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <nav class="col-md-2 d-none d-md-block bg-dark sidebar min-vh-100">
+                <div class="sidebar-sticky pt-3 text-white">
+                    <h4 class="px-3">CRUD System</h4>
+                </div>
+            </nav>
+            <!-- Main content -->
+            <main class="col-md-10 ms-sm-auto px-md-4">
+                <div
+                    class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">Students List</h1>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#studentModal">
+                        <i class="fas fa-plus"></i> Add New Student
+                    </button>
+                </div>
+                <div class="table-responsive bg-white shadow-sm p-3 rounded">
+                    <table class="table table-hover align-middle">
+                        <thead class="table-light">
+                            <tr>
+                                <th>ID</th>
+                                <th>Full Name</th>
+                                <th>Department</th>
+                                <th>Grade</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="studentTableBody">
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Student Modal -->
+    <div class="modal fade" id="studentModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle">Add Student</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="studentForm">
+                        <input type="hidden" id="studentIdIndex">
+                        <div class="mb-3">
+                            <label for="nameInput" class="form-label">Full Name</label>
+                            <input type="text" id="nameInput" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="deptInput" class="form-label">Department</label>
+                            <input type="text" id="deptInput" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="gradeInput" class="form-label">Grade</label>
+                            <input type="text" id="gradeInput" class="form-control">
+                        </div>
+                        <button type="submit" class="btn btn-success w-100">Save Student</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="Bootstrap/bootstrap.bundle.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/students.js"></script>
+</body>
+
+</html>
