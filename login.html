@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css/login.css" />
+
+    />
+  </head>
+  <body>
+    <div class="login-box">
+      <div class="top-icon">
+        <i class="fa-solid fa-graduation-cap"></i>
+      </div>
+
+      <h2>Welcome back</h2>
+      <p class="desc">
+        Enter your credentials to access your intellectual sanctuary.
+      </p>
+
+      <form>
+        <div class="input-group">
+          <label>ACADEMIC EMAIL</label>
+          <div class="input-container">
+            <input type="email" />
+            <i class="fa-solid fa-circle-check check-icon"></i>
+          </div>
+        </div>
+
+        <div class="input-group">
+          <div class="labels-row">
+            <label>PASSWORD</label>
+            <a href="#">Forgot password?</a>
+          </div>
+          <div class="input-container error-state">
+            <input type="password" value="12345678" />
+            <i class="fa-solid fa-circle-exclamation error-icon"></i>
+          </div>
+          <span class="error-text"
+            >Your password must be at least 12 characters.</span
+          >
+        </div>
+
+        <div class="checkbox-group">
+          <input type="checkbox" id="keep-login" />
+          <label for="keep-login">Keep me signed in</label>
+        </div>
+
+        <button type="submit" class="main-btn">
+          Enter Atelier <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </form>
+
+      <div class="divider">
+        <span>OR CONTINUE VIA</span>
+      </div>
+
+      <div class="social-group">
+        <button class="social-btn">
+          <i class="fa-brands fa-google" style="color: #ea4335"></i> Google
+        </button>
+        <button class="social-btn">
+          <i class="fa-brands fa-linkedin" style="color: #0077b5"></i> LinkedIn
+        </button>
+      </div>
+
+      <p class="footer-link">
+        New to the Atelier? <a href="#">Submit an application</a>
+      </p>
+    </div>
+  </body>
+</html>
