@@ -1,0 +1,173 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #0b2259;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.login-box {
+    background-color: white;
+    width: 380px;
+    padding: 35px;
+    border-radius: 10px;
+}
+
+
+.top-icon {
+    background-color: #f4f6fa;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: #0b2259;
+    margin-bottom: 20px;
+}
+
+/* texts*/
+h2 {
+    color: #0b2259;
+    margin-bottom: 5px;
+    font-size: 22px;
+}
+
+.desc {
+    color: #666;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+/* label inputs*/
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-size: 11px;
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.labels-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.labels-row a {
+    font-size: 11px;
+    color: #0b2259;
+    text-decoration: none;
+}
+
+.input-container {
+    position: relative;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px;
+    padding-right: 30px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+.input-container i {
+    position: absolute; 
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%); 
+}
+
+.check-icon { color: #0b2259; }
+.error-icon { color: red; }
+
+/* invalid password */
+.error-state input {
+    border-bottom: 2px solid red; 
+}
+.error-text {
+    color: red;
+    font-size: 11px;
+    display: block;
+    margin-top: 5px;
+}
+
+/*Checkbox */
+.checkbox-group {
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+/*main button */
+.main-btn {
+    width: 100%;
+    background-color: #0b2259;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    color: #888;
+    font-size: 11px;
+}
+
+.divider::before, .divider::after {
+    content: "";
+    flex: 1; 
+    height: 1px;
+    background-color: #ddd;
+}
+
+.divider span {
+    padding: 0 10px;
+}
+
+// social media buttons
+.social-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.social-btn {
+    flex: 1; 
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+  
+.footer-link {
+    text-align: center;
+    font-size: 12px;
+}
+
+.footer-link a {
+    color: #0b2259;
+    font-weight: bold;
+    text-decoration: none;
+}
