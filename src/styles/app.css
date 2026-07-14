@@ -1,0 +1,267 @@
+body {
+  background-color: #f5f6fa;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+/* ---------- App layout ---------- */
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.app-main {
+  flex: 1;
+  min-width: 0;
+}
+
+.page-container {
+  padding: 40px;
+}
+
+.page-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.page-subtitle {
+  color: #6b7280;
+  margin-top: 4px;
+  margin-bottom: 24px;
+}
+
+/* ---------- Mobile top header ---------- */
+.mobile-header {
+  padding: 12px 16px;
+  background: #fff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.hamburger-btn {
+  border: none;
+  background: #f3f4f6;
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 20px;
+  color: #374151;
+}
+
+/* ---------- Content card ---------- */
+.content-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  padding: 24px;
+}
+
+/* ---------- Search box ---------- */
+.search-box {
+  position: relative;
+  flex: 1;
+  min-width: 220px;
+}
+
+.search-box i {
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  transform: translateY(-50%);
+  color: #9ca3af;
+}
+
+.search-box .form-control {
+  padding-left: 38px;
+  background-color: #f3f4f6;
+  border: none;
+  border-radius: 8px;
+}
+
+.search-box .form-control:focus {
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+  background-color: #fff;
+}
+
+/* ---------- Add button ---------- */
+.add-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.3px;
+  border-radius: 8px;
+  padding: 10px 20px;
+  white-space: nowrap;
+}
+
+/* ---------- Table ---------- */
+.data-table thead th {
+  font-size: 13px;
+  color: #6b7280;
+  font-weight: 600;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.data-table tbody td {
+  font-size: 14px;
+  color: #374151;
+  vertical-align: middle;
+}
+
+.data-table tbody tr:hover {
+  background-color: #f9fafb;
+}
+
+/* ---------- Avatar ---------- */
+.avatar-circle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #e5e7eb;
+  color: #374151;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* ---------- Status badge ---------- */
+.status-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.badge-active {
+  background-color: #2563eb;
+  color: #fff;
+}
+
+.badge-inactive {
+  background-color: #e5e7eb;
+  color: #4b5563;
+}
+
+/* ---------- Action icons ---------- */
+.action-icons {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 15px;
+}
+
+.action-icons i {
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.action-icons i:hover {
+  opacity: 0.6;
+}
+
+.icon-edit,
+.icon-view {
+  color: #374151;
+}
+
+.icon-delete {
+  color: #ef4444;
+}
+
+/* ---------- Modal (Add / Edit / View) ---------- */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1050;
+  padding: 20px;
+}
+
+.modal-box {
+  background: #fff;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 720px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.modal-box-header {
+  padding: 22px 28px 6px 28px;
+}
+
+.modal-box-header h4 {
+  font-weight: 700;
+  color: #111827;
+}
+
+.modal-box-body {
+  padding: 20px 28px;
+  overflow-y: auto;
+}
+
+.modal-box-footer {
+  padding: 16px 28px;
+  border-top: 1px solid #eef0f2;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+/* field with a small "notched" label sitting on top of the input border,
+   similar to the outlined text field style shown in the design */
+.modal-field {
+  position: relative;
+  margin-top: 22px;
+  margin-bottom: 4px;
+}
+
+.modal-field label {
+  position: absolute;
+  top: -9px;
+  left: 12px;
+  background: #fff;
+  padding: 0 6px;
+  font-size: 12px;
+  color: #6b7280;
+  z-index: 1;
+}
+
+.modal-field input,
+.modal-field select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 15px;
+  color: #111827;
+  background-color: #fff;
+}
+
+.modal-field input:disabled,
+.modal-field select:disabled {
+  background-color: #f9fafb;
+  color: #374151;
+}
+
+.modal-field input:focus,
+.modal-field select:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .page-container {
+    padding: 20px;
+  }
+}
