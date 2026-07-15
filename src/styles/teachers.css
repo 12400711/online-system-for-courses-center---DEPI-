@@ -2,8 +2,8 @@
 
 .stat-card {
   background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   padding: 26px 16px;
   text-align: center;
   transition: transform 0.15s ease;
@@ -11,12 +11,7 @@
 
 .stat-card:hover {
   transform: translateY(-2px);
-}
-
-.stat-label {
-  color: #6b7280;
-  font-size: 14px;
-  margin-bottom: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
 }
 
 .stat-value {
