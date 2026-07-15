@@ -6,7 +6,13 @@ const menuItems = [
   { name: "Students", path: "/students", icon: "bi-people-fill" },
   { name: "Courses", path: "/courses", icon: "bi-journal-bookmark-fill" },
   { name: "Attendance", path: "/attendance", icon: "bi-calendar-check-fill" },
+<<<<<<< HEAD
   { name: "Teachers", path: "/teachers", icon: "bi-mortarboard-fill" },
+=======
+  { name: "Grades", path: "/grades", icon: "bi-star-fill" },
+  { name: "Teachers", path: "/teachers", icon: "bi-mortarboard-fill" },
+  { name: "Finance", path: "/finance", icon: "bi-cash-coin" },
+>>>>>>> 76617c867399c2943a21c2976f6cfefd83a35057
   { name: "Settings", path: "/settings", icon: "bi-gear-fill" },
 ];
 

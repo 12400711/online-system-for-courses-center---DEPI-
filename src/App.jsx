@@ -8,6 +8,11 @@ import Teachers from "./pages/Teachers";
 import Dashboard from "./pages/Dashboard";
 import Attendance from "./pages/Attendance";
 import Courses from "./pages/Courses";
+<<<<<<< HEAD
+=======
+import Grades from "./pages/Grades";
+import Finance from "./pages/Finance";
+>>>>>>> 76617c867399c2943a21c2976f6cfefd83a35057
 import Settings from "./pages/Settings";
 
 function App() {
@@ -36,6 +41,11 @@ function App() {
           <Route path="/teachers" element={<Teachers />} />
           <Route path="/attendance" element={<Attendance />} />
           <Route path="/courses" element={<Courses />} />
+<<<<<<< HEAD
+=======
+          <Route path="/grades" element={<Grades />} />
+          <Route path="/finance" element={<Finance />} />
+>>>>>>> 76617c867399c2943a21c2976f6cfefd83a35057
           <Route path="/settings" element={<Settings />} />
         </Routes>
       </div>
