@@ -1,7 +1,6 @@
 # 🎓 Student Management System (SMS) 
 
 > **Digital Egypt Pioneers Initiative (DEPI) - Final Graduation Project**  
-> **Live Demo:** [dashboard-react-puce-alpha.vercel.app/finance](https://dashboard-react-puce-alpha.vercel.app/finance)
 
 ---
 
